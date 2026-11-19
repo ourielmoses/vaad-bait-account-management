@@ -1,5 +1,12 @@
-# Va'ad Bayit account management
+# ועד בית — דוחות חשבון
 
-A simple HTML/JavaScript app for a building committee: units, monthly charges, resident payments, expenses, and a cash overview.
+אפליקציית HTML בעברית לוועד בית. פותחים את `index.html` בדפדפן, בלי התקנה.
 
-Open `index.html` in a browser. All data stays in that browser (`localStorage`). Use **Settings → Export JSON** to keep a backup.
+טוענים ייצוא תנועות מהבנק (CSV). הדוחות מחולקים לפי שנים. בכל שנה:
+
+- **תשלומי דיירים** — כמה נכנס מכל דירה בכל חודש. דמי ועד רגילים הם 200 ₪ לחודש, ואפשר להוסיף גבייה מיוחדת.
+- **הוצאות והכנסות** — יתרת פתיחה ועוד ההכנסות צריכות להיות שוות ליתרת הסגירה ועוד ההוצאות.
+
+העברה עם שם דייר משויכת אוטומטית. הפקדת צ׳ק לא מזהה דירה, ונשארת בפאנל עד שבוחרים. אם ההפקדה גדולה מ-200 ₪ אפשר לשייך כמה דיירים. דירות שמשלמות בצ׳ק מופיעות כרשימה קצרה.
+
+**שמירת דוח (JSON)** שומרת את השיוכים, הדירות והסיווג. **טעינת דוח** מחזירה אותם. הנתונים נשמרים גם בדפדפן.
